@@ -23,13 +23,15 @@ function populateFormData() {
 }
 
 function onFormElementsInput() {
-  formData.message = refs.messageInput.value;
   formData.email = refs.emailInput.value;
+  formData.message = refs.messageInput.value;
+
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
 function onFormSubmit(e) {
   e.preventDefault();
+  console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
   refs.form.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
