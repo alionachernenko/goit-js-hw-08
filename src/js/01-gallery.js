@@ -3,7 +3,7 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// Change code below this line
+// Change code below this linejj
 
 const galleryRef = document.querySelector('.gallery');
 
